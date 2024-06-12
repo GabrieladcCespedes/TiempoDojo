@@ -1,0 +1,99 @@
+/*Gabriela Céspedes*/
+
+/*se ubica el contenido de la barra de navegacion principal, se cambia el color
+de la fuente, el tamaño de la fuente, se coloca margenes*/
+.nav, .nav-links, .city{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white; 
+    text-decoration: none; /*quita el subrayado de los links*/
+    margin: 20px;
+}
+/*color de fondo de la barra de navegacion*/
+.nav{
+    background-color: skyblue;
+}
+/*se quita los estilos predeterminados de la lista (los puntitos al inicio)*/
+ul{
+    list-style: none;
+}
+/*se ubica a la barra que contiene el nombre de la ciudad y el selector de temperatura */
+.bar, .select{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin: 20px;
+}
+/*a la cajita que contiene las opciones (°C o °K) se modifica su tamaño, el tamaño de la fuente, 
+los bordes y se le agrega margenes*/
+.option{
+    width: 50px;
+    height: 30px;
+    font-size:15px;
+    border: 2px solid black;
+    margin: 5px;
+}
+/*se ajusta el tamaño de las imagenes y su borde para que quede redondo*/
+.img-weather{
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ;
+}
+/*centra los bloques day en el centro de la pagina*/
+.block{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid black;
+    margin: 20px;
+}
+/*se centre el contenido de los bloques day, se cambia el color de fondo, el tamaño
+y se agregan margenes*/
+.day{
+    text-align: center;
+    background-color: rgb(233, 230, 230);
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 5px;
+}
+/*se ubican uno al lado del otro las temperaturas max y min de los dias*/
+.temp{
+    display: flex;
+    justify-content: space-around;
+}
+/*se define un color rojo para la fuente de las temperaturas max*/
+.temp-max{
+    color: red
+}
+/*se define un color azul para la fuente de las temperaturas min*/
+.temp-min{
+    color: blue;
+}
+
+/**/
+#cookies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: fixed;/*hace que se quede fija en una posicion en la pagina*/
+    bottom: 0;/*se queda fijo en la parte inferior de la pagina*/
+    border: 2px solid black;
+    margin: 20px;
+    padding: 5px;
+}
+.img_cookie{
+    width: 100px;
+    height: 100px;
+}
+
+.btn_accept{
+    background-color: skyblue;
+    box-shadow: 3px 3px;/*sombra al boton*/
+    width: 150px;
+    height: 25px;
+}

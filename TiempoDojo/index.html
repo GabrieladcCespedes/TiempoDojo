@@ -1,0 +1,92 @@
+<!--Gabriela Céspedes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Barra de navegacion principal-->
+    <div class="nav">
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="city" onclick="alerta()">Burbank</a></li>
+            <li><a href="#" class="city" onclick="alerta()">Chicago</a></li>
+            <li><a href="#" class="city" onclick="alerta()">Dallas</a></li>
+        </ul>
+    </div> 
+    <!--Barra donde se muestra el nombre de la ciudad y se selecciona la temperatura-->
+    <div class="bar">
+        <h2>San Jose</h2>
+        <!-- Selecciona una opcion-->
+        <div class="select">
+            <p>show temperature in </p>
+            <select class="option" onchange="cambiarTemp(this)">
+                <option value="C" class="celsius">°C</option>
+                <option value="F" class="fahrenheit">°F</option>
+            </select> 
+        </div>
+    </div>
+    <!--este bloque contiene los bloques con los dias y sus pronosticos-->
+    <div class="block">
+        <!---->
+        <div class="day">
+            <h2>Today</h2>
+            <img src="assets/some_rain.png" alt="some_rain" class="img-weather">
+            <p>some rain</p>
+            <div class="temp">
+                <h2 class="temp-max">24°C</h2>
+                <h2 class="temp-min">18°C</h2>
+            </div>
+        </div>
+        <!---->
+        <div class="day">
+            <h2>Tomorrow</h2>
+            <img src="assets/some_sun.png" alt="some_sun" class="img-weather">
+            <p>some sun</p>
+            <div class="temp">
+                <h2 class="temp-max">27°C</h2>
+                <h2 class="temp-min">19°C</h2>
+            </div>
+        </div>
+        <!---->
+        <div class="day">
+            <h2>Friday</h2>
+            <img src="assets/some_clouds.png" alt="some_clouds" class="img-weather">
+            <p>some clouds</p>
+            <div class="temp">
+                <h2 class="temp-max">21°C</h2>
+                <h2 class="temp-min">16°C</h2>
+            </div>
+        </div>
+        <!---->
+        <div class="day">
+            <h2>Saturday</h2>
+            <img src="assets/some_sun.png" alt="some_sun" class="img-weather">
+            <p>some sun</p>
+            <div class="temp">
+                <h2 class="temp-max">26°C</h2>
+                <h2 class="temp-min">21°C</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!--Alerta de Cookies-->
+    <div id="cookies">
+        <img src="assets/cookie.png" alt="cookie" class="img_cookie">
+        <div>
+            <h2>Stop! Cookie time</h2>
+        <p>
+            We use cookies (sadly not the edible ones) to personaliza 
+            content and abs, to provide social features and to
+            analyze our traffic. <a href="">Read more...</a>
+        </p>
+        </div>
+        <button class="btn_accept" onclick="removeMessage(cookies)">I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
